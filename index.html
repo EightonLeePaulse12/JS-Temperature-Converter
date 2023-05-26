@@ -17,9 +17,20 @@
                 <h2 class="mini-heading">Convert Your Temperatures!</h2>
             </div>
             <div class="main-section">
-                <span id="choose-val">20</span>
-                <span id="choose-val">30</span>
-                <input type="range" min = "0" max = "1" value = "100" name="Which temperature?" id="choose">
+                <p class="paragraph">Choose the temperature that you want to convert to:</p>
+                <div class="theSpace">
+                    <!-- <span class="stValue" id="choose-val">to °C</span>
+                    <span class="ndValue" id="choose-val">to °F</span> -->
+                    <input type="checkbox" name="whichTemperature" id="choose">
+                    <label>
+                        <span class="custom-checkbox">checked = to °C <br> unchecked = to °F</span> 
+                    </label>
+                    <br>
+                    <br>
+                    <input type="number" name="tempInput" placeholder="Enter temperature: " id="enterAmount">
+                    <button id="calculate">Convert</button>
+                    <p id="myAnswer"></p>
+                </div>
             </div>
         </div>
     </div>
