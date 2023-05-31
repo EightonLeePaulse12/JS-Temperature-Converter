@@ -4,9 +4,10 @@ const amount = document.querySelector('#enterAmount');
 const celString = "°C";
 const farString = "°F";
 const range = document.querySelector('#choose');
-let tempInput = document.querySelector('#enterAmount');
+const tempInput = document.querySelector('#enterAmount');
 const button = document.querySelector('#calculate')
 const answer = document.querySelector('#myAnswer')
+const clear = document.querySelector('#clear')
 
 // Functions
 
@@ -17,9 +18,26 @@ button.addEventListener('click',()=>{
 
     if (range.checked){
         let finalAnswer = parseFloat(toCelsius)
-        answer.innerHTML = parseFloat(finalAnswer) + "°C"
+        answer.textContent = parseFloat(finalAnswer) + "°C"
     } else{
         let finalAnswer2 = parseFloat(toFarhenheit)
-        answer.innerHTML = parseFloat(finalAnswer2) + "°F"
+        answer.textContent = parseFloat(finalAnswer2) + "°F"
 }
 })
+
+clear.addEventListener('click',()=>{
+    if(tempInput.value = tempInput.value){
+        tempInput.value = ''
+    } else{
+        tempInput.value = tempInput.value 
+    }
+
+    if(answer.textContent = answer.textContent){
+        answer.textContent = ''
+    }else{
+        answer.textContent = answer.textContent
+    }
+})
+
+
+console.log(answer.innerHTML)

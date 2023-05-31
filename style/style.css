@@ -120,6 +120,20 @@ h2{
     border:.2rem solid rgb(19, 9, 77);
 }
 
+#clear{
+    /* position:relative;
+    right:-1.3rem; */
+    text-align: center;
+    width:100%;
+    height:2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 2rem;
+    background-color:#24243e;
+    border:.2rem solid rgb(19, 9, 77);
+}
+
 #calculate{
     /* position:relative;
     right:-1.3rem; */
